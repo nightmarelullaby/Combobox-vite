@@ -1,0 +1,84 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+.form{
+  border-radius:6px;
+  position:relative;
+  display:flex;
+  overflow: hidden;
+  flex-direction: column;
+
+}
+.formFocused{
+  position:relative;
+  display:flex;
+  flex-direction: column;
+  border-radius:6px;
+    overflow: hidden;
+}
+.inputText{
+  padding:16px 0px;
+/*  transition: .15s ease;*/
+}
+
+.inputText:focus{
+/*  translate: 4px 0;*/
+  padding-left: 5px;
+  border:none;
+  outline: none;
+}
+.inputText::placeholder{
+  color:#969ea5;
+}
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+.dropdown{
+  display:flex;left:-1;z-index:0;border-top:1px solid #e7e7e7;width:100%;background-color:white;border-bottom-left-radius:6;border-bottom-right-radius:6px
+}
+.dropdownOff{
+  display:none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
